@@ -1,5 +1,6 @@
 # weather-app
-A web app showing temp,windspeed, humidity and weather description for the Location provided.
+A web app showing temp, windspeed, humidity and weather description for the Location provided.
+YOu can check it out here: https://tinyurl.com/zfffvj5c
 
 ## Getting Started
 
