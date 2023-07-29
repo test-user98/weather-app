@@ -15,7 +15,7 @@ You'll need to have the following installed:
 ### Installing
 
 1. Clone the repository:
-git clone https://github.com/test-user98/weather-app.git
+```git clone https://github.com/test-user98/weather-app.git```
 
 
 2. Navigate to the cloned project directory
@@ -23,18 +23,20 @@ cd weather-app
 
 
 3. Install the required dependencies
-npm install axios
+```npm install axios```
 ### for testing puposese ###
-npm install --save-dev jest @testing-library/react @testing-library/jest-dom supertest
+```npm install --save-dev jest @testing-library/react @testing-library/jest-dom supertest```
+```npm install --save-dev babel-jest @babel/preset-env```
 
 
 4. Create a `.env.local` file in your project root and add your OpenWeatherMap API Key:
-API_KEY= 'Your API KEY'
+
+`API_KEY= 'Your API KEY'`
 
 5. Start the development server:
-npm run dev
+```npm run dev```
 
-Your app should now be running on [http://localhost:3000](http://localhost:3000).
+Your app should now be running on http://localhost:3000.
 
 ## Features
 
