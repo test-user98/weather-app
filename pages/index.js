@@ -25,6 +25,10 @@ export default function Home() {
     }
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') getWeather();
+  };
+
   return (
     <div className="bg-gradient-to-r from-blue-200 to-green-200 pt-48 min-h-screen">
       <div className="flex flex-col items-center space-y-4">
@@ -34,6 +38,7 @@ export default function Home() {
             type="text" 
             value={city} 
             onChange={(e) => setCity(e.target.value)}
+            onKeyDown={handleKeyDown}    
             placeholder="Enter city" 
             className="px-4 py-2 text-black border-2 border-gray-300 rounded"
           />
