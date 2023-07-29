@@ -28,7 +28,6 @@ npm install axios
 npm install --save-dev jest @testing-library/react @testing-library/jest-dom supertest
 
 
-
 4. Create a `.env.local` file in your project root and add your OpenWeatherMap API Key:
 API_KEY= 'Your API KEY'
 
