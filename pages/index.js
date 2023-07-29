@@ -1,19 +1,24 @@
 import { useState } from 'react';
 import axios from 'axios';
 
+// The Home component allows users to input a city and retrieve weather data
 export default function Home() {
+    // States for managing city input, returned city, weather data, and error messages
   const [city, setCity] = useState('');
   const [returnedCity, setReturnedCity] = useState('');
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState('');
 
+// getWeather function sends a post request to the server with the entered city name 
+  // and retrieves weather data or error message
   const getWeather = async () => {
+        // Trim and check if city name was entered
     if (!city.trim()) {
       setError('Please enter a city name 😢');
       setWeather(null);
       return;
     }
-
+    // Send a request to the server
     try {
       const response = await axios.post('/api/weather', { city });
       setReturnedCity(city);
@@ -25,6 +30,7 @@ export default function Home() {
     }
   };
 
+  //on enter key api is fired too..;)
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') getWeather();
   };
